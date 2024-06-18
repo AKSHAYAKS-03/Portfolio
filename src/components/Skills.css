@@ -1,0 +1,74 @@
+/* src/components/Skills.css */
+
+.skills-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .skills-container h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  .skills {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .skill-bar {
+    width: 50px;
+    border-radius: 90px;
+    height: 150px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease;
+}
+
+.skill-bar:hover {
+  transform: translateY(-10px);
+}
+
+.skill-percentage {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    color: lightgray;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for percentage */
+    transition: width 0.9s ease-out, background-color 0.9s ease-out; /* Smooth transition for width and background-color */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .skill-bar:hover .skill-percentage {
+    width: 100%; /* Expand to full width on hover */
+    opacity: 1; /* Show percentage label on hover */
+    background-color: yellowgreen;
+  }
+   
+
+  .skill-value {
+    margin-top: 5px;
+  }  

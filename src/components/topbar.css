@@ -1,0 +1,29 @@
+/* src/NavBar.css */
+.navbar {
+    background-color: black;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  /* Example of navbar item styles */
+.navbar-item {
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar-item:hover {
+    text-shadow: 1px 1px 20px rgba(247, 244, 244, 0.886); 
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  

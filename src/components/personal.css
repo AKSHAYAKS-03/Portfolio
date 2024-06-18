@@ -1,0 +1,33 @@
+/* Personal.css */
+
+.personal {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .personal .name {
+    font-size: 85px; /* Adjust font size for the name */
+    color: hsl(0, 0%, 82%); /* Adjust text color for the name */
+    font-weight: bold; /* Ensure bold font weight */
+  }
+  
+  .personal .name:hover {
+    font-size: 100px; /* Adjust font size on hover */
+    color: hwb(0 95% 5%); /* Change text color on hover */
+    cursor: pointer; /* Add pointer cursor on hover */
+  }
+  
+  .profile-image {
+    width: 400px; /* Adjust width of the profile image */
+    height: 400px; /* Adjust height of the profile image */
+    margin-left: 40px; /* Add spacing between name and image */
+    border-radius: 25%; /* Make the image round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box-shadow */
+  }
+  
