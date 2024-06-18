@@ -21,7 +21,7 @@
     background-color: #333; /* Dark background color for project boxes */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 80px #fefdfd33; /* Box shadow for subtle elevation */
+    box-shadow: 0 4px 30px #fefdfd33; /* Box shadow for subtle elevation */
     transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
   }
   

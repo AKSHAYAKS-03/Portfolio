@@ -1,6 +1,8 @@
 import React from 'react';
 import linkedin from '../assets/images/linkedin.png';
 import insta from '../assets/images/insta.jpg';
+import github from '../assets/images/gitimg.png';
+
 import './Contact.css'; // Import the CSS file for styling
 
 const Contact = () => {
@@ -12,6 +14,8 @@ const Contact = () => {
         <div className="social-media">
           <img src={linkedin} alt="LinkedIn" onClick={() => window.open('https://www.linkedin.com/in/akshaya-senthilkumar-123487270/')} />
           <img src={insta} alt="Instagram" onClick={() => window.open('https://www.instagram.com/_akshayaks_/')} />
+          <img src={github} alt="Instagram" onClick={() => window.open('https://github.com/AKSHAYAKS-03')} />
+
           <p><strong>+91 7305065593</strong></p>
 
         </div><br></br>

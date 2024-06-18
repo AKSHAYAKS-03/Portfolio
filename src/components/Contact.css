@@ -39,6 +39,7 @@
     cursor: pointer;
     border-radius: 50%;
     transition: transform 0.3s ease-out;
+    background-color: #ffffff;
   }
   
   .social-media img:hover {
