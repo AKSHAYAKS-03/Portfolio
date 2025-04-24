@@ -2,18 +2,22 @@
 
 .personal {
     margin-top: 100px;
-    text-align: center;
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
   }
   
   .personal-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items:left;   
+     margin-left: 40px;
+     width:900px;
+     /* background-color: aqua; */
+
   }
   
   .personal .name {
     font-size: 85px; /* Adjust font size for the name */
-    color: hsl(0, 0%, 82%); /* Adjust text color for the name */
+    color: hsl(48, 92%, 54%); /* Adjust text color for the name */
     font-weight: bold; /* Ensure bold font weight */
   }
   
@@ -24,10 +28,14 @@
   }
   
   .profile-image {
-    width: 400px; /* Adjust width of the profile image */
-    height: 400px; /* Adjust height of the profile image */
+    width: 300px; /* Adjust width of the profile image */
+    height: 350px; /* Adjust height of the profile image */
     margin-left: 40px; /* Add spacing between name and image */
     border-radius: 25%; /* Make the image round */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box-shadow */
   }
   
+  .image{
+    margin-right: 10px;
+
+  }

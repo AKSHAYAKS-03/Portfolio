@@ -1,0 +1,54 @@
+/* Achievements1.css */
+
+.achi-top {
+    margin-top: 100px;
+    text-align: center;
+    width: auto;
+    
+  }
+  
+  .tables {
+    background-color: #000000;
+    width: 1200px;
+    margin: 0 auto; /* Center the table horizontally */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .tables table {
+    width: 100%; /* Allow the table to adjust width based on content */
+    border-collapse:inherit;
+    border-radius: 50px;
+    
+  }
+  
+  .tables td {
+    padding: 20px;
+    text-align: center;
+    color: white; /* Ensure text color is white */
+  }
+  
+  .tables tr:first-child {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .iframe-container {
+    width: 350px; /* Set a fixed width for iframe containers */
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px; /* Adjust border-radius as needed */
+  }
+  
+  /* Adjust hover effect for <strong> tags */
+  .tables td strong:hover {
+    font-size: 30px;
+    color: #c9c5c5; /* Adjust the color on hover */
+    cursor: pointer;
+  }
+  
+  /* Ensure image width and height are set properly */
+  img {
+    width: 350px; /* Make image responsive within its container */
+    height: auto;
+  }
+  

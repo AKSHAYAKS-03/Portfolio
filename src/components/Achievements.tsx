@@ -1,80 +1,85 @@
 import React, { useState } from 'react';
-import './Achievements.css'; // Import the CSS file for styling
+import './Achievements.css';
+import leetcodeImg from '../assets/leetcode.jpg'; // Optional LeetCode banner or logo
+import hackerrankImg from '../assets/hackerrank.png'; // Optional
+import gfgImg from '../assets/gfg.png'; // Optional
 
 const Achievements = () => {
-  const [showLeetCode, setShowLeetCode] = useState(false);
-  const [showGeeksForGeeks, setShowGeeksForGeeks] = useState(false);
-  const [showHackerRank, setShowHackerRank] = useState(false);
+  const [activeProfile, setActiveProfile] = useState('');
 
-  const toggleLeetCode = () => {
-    setShowLeetCode(!showLeetCode);
-    setShowGeeksForGeeks(false); // Close GeeksForGeeks profile when opening LeetCode profile
-    setShowHackerRank(false); // Close HackerRank profile when opening LeetCode profile
-  };
-
-  const toggleGeeksForGeeks = () => {
-    setShowGeeksForGeeks(!showGeeksForGeeks);
-    setShowLeetCode(false); // Close LeetCode profile when opening GeeksForGeeks profile
-    setShowHackerRank(false); // Close HackerRank profile when opening GeeksForGeeks profile
-  };
-
-  const toggleHackerRank = () => {
-    setShowHackerRank(!showHackerRank);
-    setShowLeetCode(false); // Close LeetCode profile when opening HackerRank profile
-    setShowGeeksForGeeks(false); // Close GeeksForGeeks profile when opening HackerRank profile
+  const handleToggle = (profile: string) => {
+    setActiveProfile(prev => (prev === profile ? '' : profile));
   };
 
   return (
     <div className="achi-top">
       <h1>Achievements</h1>
+      <br></br>
+      <center>
       <div className="achi-container">
-        <div className="name" onClick={toggleLeetCode}>
+        <button className="achi_name" onClick={() => handleToggle('leetcode')}>
           <strong>LEETCODE</strong>
-        </div>
-        {showLeetCode && (
+        </button>
+        {activeProfile === 'leetcode' && (
           <div className="iframe-container">
-            <iframe
-              src="https://leetcode.com/u/AKSHAYA_02/"
-              title="LeetCode Profile"
-              width="100%"
-              height="600px"
-              frameBorder="0"
-            />
+            <img src={leetcodeImg} alt="LeetCode" style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }} />
+            <p>
+              LeetCode doesn't allow embedding —{' '}
+              <a
+                href="https://leetcode.com/AKSHAYAKS_913122104014/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Profile
+              </a>
+            </p>
           </div>
         )}
       </div>
+
       <div className="achi-container">
-        <div className="name" onClick={toggleGeeksForGeeks}>
+        <button className="achi_name" onClick={() => handleToggle('geeksforgeeks')}>
           <strong>GEEKSFORGEEKS</strong>
-        </div>
-        {showGeeksForGeeks && (
+        </button>
+        {activeProfile === 'geeksforgeeks' && (
           <div className="iframe-container">
-            <iframe
-              src="https://www.geeksforgeeks.org/user/akshayasent79iz/"
-              title="GeeksForGeeks Profile"
-              width="100%"
-              height="600px"
-              frameBorder="0"
-            />
+            <img src={gfgImg} alt="geeksforgeeks" style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }} />
+            <p>
+              LeetCode doesn't allow embedding —{' '}
+              <a
+                href="https://www.geeksforgeeks.org/user/akshayasent79iz/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Profile
+              </a>
+            </p>
           </div>
         )}
       </div>
+      
+
       <div className="achi-container">
-        <div className="name" onClick={toggleHackerRank}>
+        <button className="achi_name" onClick={() => handleToggle('hackerrank')}>
           <strong>HACKERRANK</strong>
-        </div>
-        {showHackerRank && (
+        </button>
+        {activeProfile === 'hackerrank' && (
           <div className="iframe-container">
-            <iframe
-              src="https://www.hackerrank.com/profile/22CSEB03_AKSHAYA"
-              title="HackerRank Profile"
-              width="100%"
-              height="600px"
-              frameBorder="0"
-            />
+            <img src={hackerrankImg} alt="geeksforgeeks" style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }} />
+            <p>
+              LeetCode doesn't allow embedding —{' '}
+              <a
+                href="https://www.hackerrank.com/profile/22CSEB03_AKSHAYA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Profile
+              </a>
+            </p>
           </div>
         )}
-      </div>
+      </div> 
+      </center>   
     </div>
   );
 };

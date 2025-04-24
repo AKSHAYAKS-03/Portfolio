@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 130px); /* Calculate height to fill remaining space */
+
+    background: linear-gradient(to top, hsl(0, 0%, 16%), hsl(0, 0%, 0%));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   }
   
   .contact-content {
@@ -13,10 +18,7 @@
     flex-direction: column;
     width: 80%; /* Adjust width as needed */
     max-width: 1200px; /* Limit maximum width */
-    background-color: black;
     padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1); /* Soft box shadow */
   }
   
   .contact-content h1 {

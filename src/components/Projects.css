@@ -1,78 +1,101 @@
+/* src/components/Projects.css */
 .projects-container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  h1 {
-    font-size: 50px;
-  }
-  
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black; /* Dark background color */
-    padding: 20px;
-  }
-  
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px;
+}
+
+.project {
+  width: calc(33% - 40px);
+  margin-top: 20px;
+  background-color: #181818;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  background-color: #2f2f2f;
+}
+
+.projects .project h2 {
+  color: #ccc;
+  margin-bottom: 20px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.projects .project h2:hover {
+  color: #fff;
+}
+
+.projects .project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.langs {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.langs h3 {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.lang-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
   .project {
-    width: 70%; /* Adjust the width as needed */
-    margin-top: 20px;
-    background-color: #333; /* Dark background color for project boxes */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 30px #fefdfd33; /* Box shadow for subtle elevation */
-    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+    width: calc(50% - 40px);
   }
-  
-  .project:hover {
-    transform: translateY(-20px); /* Lift the box slightly on hover */
+}
+
+@media (max-width: 480px) {
+  .project {
+    width: calc(100% - 40px);
   }
-  
-  .projects .project h2 {
-    color: #8a8585; /* Light grey text color */
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .projects .project h2:hover {
-    color: white; /* White text color on hover */
-    cursor: pointer;
-  }
-  
-  .projects .project a {
-    text-decoration: none;
-    color: white; /* White link color */
-  }
-  
-  .projects .project table {
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  .projects .project table img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .langs {
-    margin-top: 20px;
-  }
-  
-  .langs h3 {
-    color: #ddd; /* Light grey heading color */
-    margin-bottom: 10px;
-  }
-  
-  .langs img {
-    width: 100px;
-    height: 100px;
-    margin: 0 10px;
-    border-radius: 50%;
-    background-color: #333; /* Darker background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+.prev-button{
+  background: transparent;
+  color:white;
+}
+.next-button{
+  background: transparent;
+  color:white;
+  margin-left: 20px;
+}

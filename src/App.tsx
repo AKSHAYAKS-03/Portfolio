@@ -3,14 +3,13 @@ import React from 'react';
 import TopBar from './components/TopBar';
 import Personal from './components/personal';
 import Education from './components/Education';
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-
+import Certificates from './components/Certificates';
 import Achievements from './components/Achievements';
 
 import Contact from './components/Contact';
-
 
 
 
@@ -23,10 +22,7 @@ const App = () => {
       </section>     
       <section id="education">
       <Education />
-      </section>
-      <section id="experience">
-      <Experience />
-      </section>       
+      </section>      
       <section id="projects">
       <Projects />
       </section>  
@@ -36,6 +32,9 @@ const App = () => {
       <section id="achievements">
       <Achievements />
       </section> 
+      <section id="certificates">
+      <Certificates />
+      </section> 
       <section id="contact">
       <Contact />
       </section>                    
@@ -44,3 +43,6 @@ const App = () => {
 };
 
 export default App;
+{/* <section id="experience">
+<Experience />
+</section>    */}
