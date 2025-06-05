@@ -24,7 +24,7 @@ import portfolio5 from '../assets/images/portfolio5.png';
 import portfolio6 from '../assets/images/portfolio6.png';
 
 
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt } from "react-icons/fa";
 import html from '../assets/images/html.png';
 import cssImage from '../assets/images/css.png';
 import js from '../assets/images/js.png';
